@@ -15,28 +15,26 @@
       <div class="card-header" th:text="${pedido.nomeProduto}">Nome do produto</div>
       <div class="card-body">
         <div class="row">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 ">
             <div class="row">
-              <div class="col-md-5">Valor: <span th:text="${pedido.valorNegociado}">134,90</span></div>
-              <div class="col-md-7">Data da entrega: <span th:text="${pedido.dataDaEntrega}">14/08/2023</span></div>
+              <div class="col-md-5"> <span class="fw-bold">Valor: </span>R$ <span th:text="${pedido.valorNegociado}"></span></div>
             </div>
-            <div>Produto</div>
+            <div class="fw-bold">Produto</div>
             <div>
               <input class="form-control" th:value="${pedido.urlProduto}" value="url do produto">
             </div>
-            <div>Descrição</div>
+            <div class="fw-bold mt-3">Descrição</div>
             <div>
               <textarea class="form-control" th:text="${pedido.descricao}">Descrição do produto</textarea>
+            </div>
+            <div class="fw-bold mt-3">Componentes</div>
+            <div>
+              <textarea class="form-control" th:text="${pedido.Componentes}" rows="6">Componentes</textarea>
             </div>
           </div>
           <div class="col-12 col-md-4">
             <div class="row">
-              <div class="col-6">
                 <img class="img-thumbnail img-fluid d-block" th:src="${pedido.urlImagem}" alt="Imagem 1">
-              </div>
-              <div class="col-6">
-                <img class="img-thumbnail img-fluid d-block" th:src="${pedido.urlImagem2}" alt="Imagem 2">
-              </div>
             </div>
           </div>
         </div>
@@ -46,3 +44,7 @@
   </div>
 </body>
 </html>
+
+
+<!-- ENZO TREVISAN 
+RM94745 -->

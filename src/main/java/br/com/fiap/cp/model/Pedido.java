@@ -23,8 +23,8 @@ public class Pedido {
   private LocalDate dataDaEntrega;
   private String urlProduto;
   private String urlImagem;
-  private String urlImagem2;
   private String descricao;
+  private String componentes;
 
   public Long getId() {
 		return id;
@@ -74,14 +74,6 @@ public class Pedido {
     this.urlImagem = urlImagem;
   }
 
-  public String getUrlImagem2() {
-    return urlImagem2;
-  }
-
-  public void setUrlImagem2(String urlImagem2) {
-    this.urlImagem2 = urlImagem2;
-  }
-
   public String getDescricao() {
     return descricao;
   }
@@ -89,4 +81,15 @@ public class Pedido {
   public void setDescricao(String descricao) {
     this.descricao = descricao;
   }
+
+    public String getComponentes() {
+    return componentes;
+  }
+
+  public void setComponentes(String componentes) {
+    this.componentes = componentes;
+  }
 }
+
+//ENZO TREVISAN 
+//RM94745

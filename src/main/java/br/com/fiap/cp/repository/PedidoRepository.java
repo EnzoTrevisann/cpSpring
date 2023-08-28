@@ -7,3 +7,5 @@ import br.com.fiap.cp.model.Pedido;
 public interface PedidoRepository extends JpaRepository <Pedido, Long> {
   
 }
+//ENZO TREVISAN 
+//RM94745
